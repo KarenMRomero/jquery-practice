@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <!-- Importa jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Importa Bootstrap 4 CSS desde una CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Importa animate.css desde una CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="text-primary text-center">jQuery Playground</h3>
+        <div class="row">
+            <div class="col-6">
+                <h4>#left-well</h4>
+                <div class="well" id="left-well">
+                    <button class="btn btn-primary target" id="target1">#target1</button>
+                    <button class="btn btn-primary target" id="target2">#target2</button>
+                    <button class="btn btn-primary target" id="target3">#target3</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <h4>#right-well</h4>
+                <div class="well" id="right-well">
+                    <button class="btn btn-primary target" id="target4">#target4</button>
+                    <button class="btn btn-primary target" id="target5">#target5</button>
+                    <button class="btn btn-primary target" id="target6">#target6</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importa Bootstrap 4 JavaScript y jQuery (Bundle) desde una CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+Yo4r7E+38SW92lCw1OWFBlvHfS+stX+p5bFfPI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+cyZlKaPe051nq2OHR9zC0TVq6sL8Eq8U5P1RSJoZ+KOpzC+6D5Gn6OJPU" crossorigin="anonymous"></script>
+
+    <!-- Tu código jQuery para agregar animaciones de Bootstrap 4 -->
+    <script>
+        $(document).ready(function () {
+            // Agrega las clases "animated" y "bounce" a los botones
+            $("button").addClass("animated bounce")
+            // Agrega la clase "animated" y "shake" a los elementos con clase "well"
+            $(".well").addClass("animated shake")
+            // Agrega la clase "animated" y "fadeOut" al elemento con ID "target3"
+            $("#target3").addClass("animated fadeOut")
+        });
+    </script>
+</body>
+</html>
